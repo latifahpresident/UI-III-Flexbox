@@ -84,186 +84,152 @@ header {
 header nav {
 	display: flex;
 	width: 80%;
-	/* margin-top: 35px; */
 	justify-content: space-between;
-	
 }
 
+header nav a {
+	text-decoration: none;
+	color: rgb(117, 116, 116);
+}
 
-
+header nav a:hover {
+	text-decoration: underline;
+}
 
 /*Home Page CSS*/
 
-
-  
-  /* header */
-  
-  /* header nav {
-	display: inline-block;
-	width: 691px;
-	vertical-align: top;
-	margin-top: 35px;
-  }
-  
-  header nav a {
-	display: inline-block;
-	margin-right: 65px;
-	font-size: 14px;
-	color: gray;
-	text-decoration: none;
-  } */
-  
-  /* header nav a:hover {
-	text-decoration: underline;
-  }
-  
-  header nav a:first-child {
-	margin-left: 0;
-  }
-  
-  header nav a:last-child {
-	margin-right: 0;
-  }
-  
-  header .logo {
-	display: inline-block;
-	margin-top: 25px;
-  } */
-  
-  /* cta */
-  
-  .cta .cta-text {
-	display: inline-block;
-	vertical-align: top;
-	font-size: 77px;
-	margin-top: 120px;
-	text-align: center;
-	padding: 0px 75px;
-  }
-  
-  .cta .cta-text button {
-	background: white;
-	vertical-align: top;
-	margin-top: 6px;
-	padding: 8px 44px;
-	font-size: 17px;
-	border: 1px solid black;
-	cursor: pointer;
-  }
-  
-  .cta .cta-text button:hover {
-	background: black;
-	color: white;
-  }
-  
-  .cta img {
-	display: inline-block;
-	margin-top: 69px;
-  }
-  
-  .main-content {
-	border-top: 1px solid black;
-	margin-top: 76px;
-	padding-top: 39px;
-  }
-  
-  .main-content .top-content {
-	padding: 0 10px;
-  }
-  
-  .main-content .top-content .text-content {
-	width: 410px;
-	display: inline-block;
-	margin-right: 34px;
-  }
-  
-  .main-content .top-content .text-content:last-child {
-	margin-right: 0;
-  }
-  
-  .main-content .middle-img {
-	margin-top: 45px;
-  }
-  
-  .main-content .bottom-content {
-	margin-top: 37px;
-	padding: 0 10px;
-  }
-  
-  .main-content .bottom-content .text-content {
-	width: 275px;
-	display: inline-block;
-	margin-right: 12px;
-  }
-  
-  .main-content .bottom-content .text-content:last-child {
-	margin-right: 0;
-  }
-  
-  .contact {
-	margin-top: 57px;
-	border-top: 1px solid black;
-	padding: 39px 10px 0;
-  }
-  
-  .contact p {
-	margin: 20px 0;
-  }
-  
-  footer {
-	margin: 32px 0;
-	text-align: center;
-	font-size: 14px;
-  }
-
-
-
-
-
-
-
-/*Service Page CSS*/
-
-header nav {
+.container .content1 {
 	display: flex;
-	width: 80%;
-	/* margin-top: 35px; */
-	justify-content: space-between;
-	
+	justify-content: space-around;
+	margin-top: 70px;
 }
 
-ul {
+.container .content1 .content1-box1 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	margin-left: 50px;
+	width: 30%;
+}
+
+.container .content1 .content1-box1 h1 {
+	font-size: 90px;
+	text-align: center;
+}
+
+.container .content1 .content1-box1 .btn {
+	color: black;
+	background: white;
+	width: 30%;
+	height: 30px;
+	border: 1.5px solid black;
+}
+
+.container .content1 .content1-box1 .btn:hover {
+	color: white;
+	background: black;
+}
+
+.container .main-content {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border-top: 1px solid black;
+}
+
+.container .main-content .top-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between; 
+	margin-top: 30px; 
+}
+
+.container .main-content .top-content .text-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	/* align-content: center; */
+	width: 40%;
+}
+
+.container .main-content .top-content .text-content .top-content-box1{
+	margin-right: 20px;
+}
+
+.container .main-content .top-content .text-content .top-content-box1 h4 {
+	align-self: flex-start;
+}
+.middle-img {
+	width: 100%;
+	margin-top: 35px;
+}
+
+.container .bottom-content {
+	margin-top: 30px;
+	padding-bottom: 30px;
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid black;
+}
+
+.container .contact {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	width: 25%;
+	margin-top: -25px;
+}
+
+.container .contact p {
+	padding-bottom: 15px;
+}
+
+  
+/*Service Page CSS*/
+
+  header nav {
+	display: flex;
+	width: 80%;
+	margin-top: 35px; 
+	justify-content: space-between;
+	
+}  
+
+ ul {
 	margin-top: 20px;
 	list-style-type: square;
+}
 
+ul li {
+	padding-top: 10px;
 }
 .services-header-img {
 	width: 100%;
 }
-.container .content-1 {
-	/* display: flex; */
+.container .service-content-1 {
 	margin-top: 40px;
-}
+} 
 
 .services {
 	font-size: 75px;
 }
 
-.main-content {
+.service-main {
 	display: flex;
 	flex-wrap: wrap;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	margin-top: 50px;
 	justify-content: center;
-}
+}  
 
-.box {
+ .box {
 	display: flex;
 	flex-direction: column;
-	background-color: lightgray;
+	flex-wrap: wrap;
+	background-color: rgb(235, 232, 232);
 	height: 200px;
-	width: 36%;
+	width: 30%;
 	margin: 25px 50px;
 	border: 2px solid black;
 	justify-content: space-between;
@@ -286,11 +252,12 @@ ul {
 	display: flex;
 	color: black;
 	background: white;
-	width: 25%;
-	height: 40px;	
-	border-radius: 10px;
+	width: 30%;
+	height: 30px;	
+	border-radius: 5px;
 	border: 1px solid black;
 	justify-content: center;
+	margin-top: 10px;
 	margin-bottom: 15px;
 	align-self: flex-start;
 	margin-left: -5px;
@@ -310,22 +277,19 @@ ul {
 	flex-direction: column;
 	height: 250px;
 	width: 35%;
-	/* margin: 30px 25px */
-}
+} 
 
 .bottom-box2 {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	/* height: 150px;
-	width: 35%; */
-	/* margin: 30px 25px; */
+
 } 
 
 .copyright {
 	margin-top: 100px;
 	text-align: center;
-}
+} */
 
 
 
